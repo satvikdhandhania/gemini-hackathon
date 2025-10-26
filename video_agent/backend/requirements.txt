@@ -1,0 +1,18 @@
+# Core API dependencies
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.11.3
+python-dotenv==1.1.0
+
+# HTTP and networking
+requests==2.32.3
+httpx==0.28.1
+fal-client
+
+# Firebase and Google Cloud
+firebase-admin==6.5.0
+google-genai
+
+# LLM integrations
+litellm==1.67.2
+openai==1.76.0

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tiktok-genie-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./resources:/app/resources
+      - ./firestore_credentials.json:/app/firestore_credentials.json
+      - ./.env:/app/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/firestore_credentials.json
+    env_file:
+      - .env
+    restart: unless-stopped

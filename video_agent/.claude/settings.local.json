@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker exec tiktok-genie-backend python test_full_pipeline.py)",
+      "Bash(docker exec tiktok-genie-backend printenv)",
+      "Bash(docker compose -f /mnt/c/cloutfarm/b2c/video_agent/docker-compose.yml restart backend)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
