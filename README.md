@@ -44,3 +44,6 @@ This was produced in a hackathon setting, so please excuse any rough edges or in
 
 
 The character_agent folder contains the code for generating character voices using ElevenLabs and Nanobanana APIs. The video_agent folder contains the backend code for processing videos and integrating with the character agent. The frontend folder contains the React application for user interaction. The character_agent and video_agent communicate via RESTful APIs where the character_agent takes input from a user on their desired character voice and generates audio files that are then used by the video_agent to create the final video output.
+
+
+Add trending videos manually to the resources/trending_videos folder for testing purposes. Tiktok does not provide a public API for fetching trending videos directly so we had to resort to this method during the hackathon.
